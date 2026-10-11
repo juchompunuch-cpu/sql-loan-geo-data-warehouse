@@ -1,7 +1,7 @@
 # sql-loan-geo-data-warehouse
 
 Building a data warehouse with **SQL Server** to analyze loan data by **geography (US state)**, including ETL process, data modeling, and analytics.
-Follows the same Medallion Architecture and project structure as [sql-data-warehouse-project](https://github.com/juchompunuch-cpu/sql-data-warehouse-project).
+Follows the same Medallion Architecture and project structure.
 
 ---
 
