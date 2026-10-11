@@ -1,0 +1,9 @@
+# Large raw data (keep the folder README, not the full extract)
+# (loan_data.csv is small enough to keep in the repo)
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.bak
+*.tmp
