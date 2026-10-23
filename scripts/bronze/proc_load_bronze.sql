@@ -16,6 +16,9 @@ Usage Example:
 
 NOTE:
     FORMAT = 'CSV' / FIELDQUOTE require SQL Server 2017 or later.
+
+Walkthrough (before -> after, step by step):
+    scripts/bronze/walkthrough_bronze.sql
 ===============================================================================
 */
 CREATE OR ALTER PROCEDURE bronze.load_bronze

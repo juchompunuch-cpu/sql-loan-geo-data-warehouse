@@ -19,6 +19,9 @@ Script Purpose:
 
 Usage:
     SELECT * FROM gold.report_loan_by_state ORDER BY total_loan_amnt DESC;
+
+Walkthrough (before -> after, step by step):
+    scripts/gold/walkthrough_gold.sql
 ===============================================================================
 */
 

@@ -67,6 +67,15 @@ scripts/gold/ddl_gold.sql
 tests/quality_checks_gold.sql
 ```
 
+3. (Optional) See what each step does to the data — **before vs after**, step by step.
+   These scripts only run `SELECT` (no data is changed). Highlight one STEP and run it, or run the whole file:
+
+```sql
+scripts/bronze/walkthrough_bronze.sql   -- CSV -> bronze (raw, all NVARCHAR)
+scripts/silver/walkthrough_silver.sql   -- bronze -> silver (each cleansing rule, before vs after)
+scripts/gold/walkthrough_gold.sql       -- silver -> star schema -> report (4.1 / 4.2 / 4.3)
+```
+
 Requires SQL Server 2017+ (for `BULK INSERT ... FORMAT = 'CSV'` and `TRIM`).
 
 ---
@@ -88,9 +97,9 @@ sql-loan-geo-data-warehouse/
 │
 ├── scripts/
 │   ├── init_database.sql            # Create database LoanGeoDW + schemas
-│   ├── bronze/                      # DDL + load_bronze procedure
-│   ├── silver/                      # DDL + load_silver procedure
-│   └── gold/                        # geography_dim, loan_status_dim, loans_geo_fact, report view
+│   ├── bronze/                      # DDL + load_bronze procedure + walkthrough (before vs after)
+│   ├── silver/                      # DDL + load_silver procedure + walkthrough (before vs after)
+│   └── gold/                        # star schema views, report view + walkthrough (before vs after)
 │
 ├── tests/
 │   ├── quality_checks_silver.sql

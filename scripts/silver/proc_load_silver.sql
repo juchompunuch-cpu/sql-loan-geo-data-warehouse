@@ -27,6 +27,9 @@ Parameters:
 
 Usage Example:
     EXEC silver.load_silver;
+
+Walkthrough (before -> after, step by step):
+    scripts/silver/walkthrough_silver.sql
 ===============================================================================
 */
 CREATE OR ALTER PROCEDURE silver.load_silver
